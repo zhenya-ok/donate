@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }}
+        <script src="{{ asset('jsbuild/js/appDashboard.js') }}"></script>
+        <script src="{{ asset('jsbuild/js/app.js') }}"></script>
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div id="vue-app"></div>
+        <div id="vue-dashboard-app"></div>
+    </div>
+{% endblock %}
